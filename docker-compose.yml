@@ -1,0 +1,21 @@
+services:
+  apache:
+    container_name: phpApp
+    restart: always
+    build: 
+      context: .
+    ports:
+      - '80:80'
+    volumes:
+      - ./:/var/www/html
+    depends_on:
+      - mysqldb
+
+  mysqldb:
+    container_name: mysqlApp
+    image: mysql:5.7
+    restart: always
+    ports:
+      - '3306:3306'
+    environment:
+      - MYSQL_ROOT_PASSWORD=root  
