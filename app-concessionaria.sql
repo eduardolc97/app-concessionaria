@@ -5,6 +5,9 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
+CREATE DATABASE IF NOT EXISTS `app-concessionaria` /*!40100 DEFAULT CHARACTER SET armscii8 */;
+USE `app-concessionaria`;
+
 CREATE TABLE IF NOT EXISTS `carros` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(50) COLLATE utf8_bin NOT NULL,
