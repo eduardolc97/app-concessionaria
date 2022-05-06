@@ -19,6 +19,7 @@ Todos os arquivos e códigos referentes às Views se encontram devidamente nas p
 - cd ~/app-concessionaria
 - docker-compose build
 - docker-compose run -p 80:80 apache
+    - É necessário rodar o DB no banco de dados para que a aplicação rode corretamente
     - Você irá encontrar o dump do DB na raiz do sistema.
     - Em caso de problema para acessar, tente usar outra porta HTTP em seu localhost.
 
